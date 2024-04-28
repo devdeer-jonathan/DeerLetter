@@ -1,5 +1,58 @@
-.testClass {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+body {
+  background-color: #49fb35;
+  margin: 10;
+  padding: 0;
+  font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+.movingBanner {
   font-size: 120%;
   color: red;
+}
+.header {
+  color: red;
+  display: flex;
+  margin: 50;
+}
+.header h1,
+.header h2 {
+  margin: 50;
+}
+,
+.header img {
+  max-width: 33%; /* Adjust maximum width */
+  height: auto;
+}
+
+.coolButton {
+  background-color: pink;
+  border: 10px solid purple;
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.signUpModal {
+  border: 4px dashed red;
+  background-color: #0000ff; /* Bright blue */
+  color: yellow;
+  padding: 20px;
+}
+
+.coolButton:hover {
+  background-color: purple;
+  color: pink;
+  border-color: green;
+}
+
+input {
+  background-color: #ffff00; /* Bright yellow */
+  color: #ff00ff; /* Magenta */
+  border: 2px solid red;
+  padding: 5px;
+  width: calc(100% - 12px); /* Adjust width considering padding and border */
 }

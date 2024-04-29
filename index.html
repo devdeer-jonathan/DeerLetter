@@ -13,7 +13,6 @@
         <h1>DEERLETTER</h1>
         <h2>The best newsletter OF ALL TIME</h2>
       </div>
-
       <img src="racoon.gif" alt="Dancing racoon gif" />
     </header>
     <button data-open-modal class="coolButton">SIGN UP NOW! (no scam)</button>
@@ -27,25 +26,26 @@
           className="coolInput"
           required
         />
-
         <label for="lastName">Last Name:</label>
         <input type="text" id="lastName" name="lastName" required />
-
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required />
-
-        <button type="submit" class="coolButton">Sign Up</button>
+        <button type="submit" formaction="confirmation.html" class="coolButton">
+          Sign Up
+        </button>
+        <button data-close-modal formaction="index.html" class="coolButton">
+          Close
+        </button>
       </form>
-      <button data-close-modal class="coolButton">Close</button>
     </dialog>
     <div class="movingBanner">
-      <marquee direction="right"
+      <marquee direction="up"
         >AWESOME NEWSLETTER PLEASE SUBSCRIBE!!!1!!!11 NOW!!! FREE!!!</marquee
       >
       <marquee direction="right"
         >AWESOME NEWSLETTER PLEASE SUBSCRIBE!!!1!!!11 NOW!!! FREE!!!</marquee
       >
-      <marquee direction="right"
+      <marquee direction="down"
         >AWESOME NEWSLETTER PLEASE SUBSCRIBE!!!1!!!11 NOW!!! FREE!!!</marquee
       >
     </div>
@@ -59,17 +59,6 @@
         more!
       </p>
     </footer>
-    <script>
-      const openButton = document.querySelector("[data-open-modal]");
-      const closeButton = document.querySelector("[data-close-modal]");
-      const modal = document.querySelector("[data-modal]");
-
-      openButton.addEventListener("click", () => {
-        modal.showModal();
-      });
-      closeButton.addEventListener("click", () => {
-        modal.close();
-      });
-    </script>
+    <script src="modalScript.js"></script>
   </body>
 </html>

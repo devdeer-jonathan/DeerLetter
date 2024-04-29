@@ -3,6 +3,7 @@ body {
   margin: 10;
   padding: 0;
   font-family: Comic Sans MS, cursive, sans-serif;
+  cursor: wait;
 }
 
 .movingBanner {
@@ -18,10 +19,11 @@ body {
 .header h2 {
   margin: 50;
 }
-,
+
 .header img {
   max-width: 33%; /* Adjust maximum width */
   height: auto;
+  margin-left: 1em;
 }
 
 .coolButton {
@@ -35,10 +37,12 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 .signUpModal {
   border: 4px dashed red;
-  background-color: #0000ff; /* Bright blue */
+  background-color: #0000ff;
   color: yellow;
   padding: 20px;
 }
@@ -50,9 +54,9 @@ body {
 }
 
 input {
-  background-color: #ffff00; /* Bright yellow */
-  color: #ff00ff; /* Magenta */
+  background-color: #ffff00;
+  color: #ff00ff;
   border: 2px solid red;
   padding: 5px;
-  width: calc(100% - 12px); /* Adjust width considering padding and border */
+  width: calc(100% - 12px);
 }
